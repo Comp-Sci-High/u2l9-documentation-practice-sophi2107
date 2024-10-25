@@ -26,13 +26,16 @@ fetchAstronauts()
 
 // 1. Find the "Astronomy Picture of the Day" API: https://api.nasa.gov/
 // 2. Identify whether you need to be authenticated with an API Key, if so create an account and save your key. 
-// 3. Navigate the documenation and create a request URL to fetch a list of all the people in outer space.
+// 3. Navigate the documenation and create a request URL to fetch picture in outer space.
 // 4. Make a fetch request and format your resulting JSON. 
 // 5. Log the data to the console to inspect its structure.
 // 6. Modify the console log to only show the URL of today's astronomy picture. 
 
-async function fetchPictures(requestURL) {
-        
+async function fetchPictures() {
+        const response = await fetch()
+        const data = await response.json()
+        console.log(data)
 }
 
 // CALL your function here
+fetchPictures("https://api.nasa.gov/planetary/apod?api_key=1toeNQPXYeq2rZi8scVm7z1xDd9wSIHwONVpxgoT")
